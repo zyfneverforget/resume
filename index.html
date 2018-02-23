@@ -6,14 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
     <link rel="stylesheet" href="./a.css">
+    <script src="//at.alicdn.com/t/font_571227_mvj9avwnv16vfgvi.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+    
 </head>
 <body>
-  <div class="topNav clearfix">
-    <a class="logo" href="#" alt="logo" style="float: left; ">
+  <div class="topNav">
+    <div class="inner clearfix">
+    <a class="logo" href="#" alt="logo">
         <span class="rs">RS</span><span class="card">card</span>
     </a>
-    <nav style="float: right;">
-      <ul class="clearfix">
+    <nav >
+      <ul>
         <li><a href="#">关于</a></li>
         <li><a href="#">技能</a></li>
         <li><a href="#">作品</a></li>
@@ -23,17 +34,20 @@
         <li><a href="#">其他</a></li>
       </ul>
     </nav>
+    </div>
   </div>
-  <div class="banner" style="background-image: url(#)"></div>
+  <div class="banner">
+    <div class="mask"></div>
+
+ </div>
   <main>
-      <div class="card">
-        <div class="pictureAndText">
+      <div class="usercard">
+        <div class="pictureAndText clearfix">
         <div class="picture">
-            <img src="#" alt="头像">
+            <img src="./images/icon.jpg" alt="头像">
         </div>
         <div class="text">
-            <div class="summary">
-            <span class="welcome">Hello</span>
+            <span class="welcome">Hello<span class="triangle"></span></span>
             <h1>张宇丰</h1>
             <p>前端工程师</p>
             <hr>
@@ -44,22 +58,31 @@
                 <dd>北京</dd>
                 <dt>手机</dt>
                 <dd>13812345678</dd>
+                <dt>邮箱</dt>
+                <dd>zyfneverforget@gmail</dd>
             </dl>
-            </div>
         </div>
       </div>
             <footer class="media">
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
-                <a href=""><img src="#" alt="..."></a>
+              <a href="">
+                <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-github"></use>
+                </svg>
+              </a>
+              <a href="">
+                <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-weibo"></use>
+                </svg>  
+              </a>
+              <a href="">
+                <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-twitter"></use>
+                </svg>   
+              </a>
             </footer>
      </div>
       <a href="">下载</a>
-    <p>一段话 bababababababababababababa<br>babbabababababababababa</p>
+    <p>我买几个橘子去。你就在此地，不要走动。</p>
   </main>
   <section>
       <h2>技能</h2>
