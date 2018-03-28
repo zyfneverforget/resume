@@ -37,13 +37,24 @@
         <a href="#"><span class="rs">RS</span><span class="card">card</span></a>
         <nav>
             <ul class="clearfix">
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其它</a></li>
+                <li class="menuTrigger"><a href="#">关于</a></li>
+                <li class="menuTrigger"><a href="#">技能</a></li>
+                <li class="menuTrigger"><a href="#">作品</a>
+                    <ul class="submenu">
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                </li>
+                <li class="menuTrigger"><a href="#">博客</a></li>
+                <li class="menuTrigger"><a href="#">日历</a></li>
+                <li class="menuTrigger"><a href="#">联系方式</a>
+                    <ul class="submenu">
+                        <li>电话</li>
+                        <li>QQ</li>
+                    </ul>
+                </li>
+                <li class="menuTrigger"><a href="#">其它</a></li>
             </ul>   
         </nav>
     </div>       
@@ -179,7 +190,22 @@
         topNavBar.classList.add('active')
     } else {
         topNavBar.classList.remove('active')
+        }
     }
+    let liTags = document.getElementsByClassName('menuTrigger') //得到的是一个哈希
+    for(let i=0;i<liTags.length;i++) { // 遍历这个哈希
+        liTags[i].onmouseenter = function(x) {
+            let li = x.currentTarget
+            li.classList.add('active')
+            //let ul = li.getElementsByTagName('ul')[0]  //[0]不加会报错
+            //ul.classList.add('active')
+        }
+        liTags[i].onmouseleave = function (y) {
+            let li = y.currentTarget 
+            //let ul = li.getElementsByTagName('ul')[0]
+            //ul.classList.remove('active')
+            li.classList.remove('active')
+        }
     }
     
     
