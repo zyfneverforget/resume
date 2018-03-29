@@ -35,11 +35,11 @@
 <div id="topNavBar" class="topNavBar">
     <div class="inner clearfix">
         <a href="#"><span class="rs">RS</span><span class="card">card</span></a>
-        <nav>
+        <nav class="menue">
             <ul class="clearfix">
-                <li class="menuTrigger"><a href="#">关于</a></li>
-                <li class="menuTrigger"><a href="#">技能</a></li>
-                <li class="menuTrigger"><a href="#">作品</a>
+                <li class="menuTrigger"><a href="#siteAbout">关于</a></li>
+                <li class="menuTrigger"><a href="#siteSkill">技能</a></li>
+                <li class="menuTrigger"><a href="#siteWorks">作品</a>
                     <ul class="submenu">
                         <li>作品1</li>
                         <li>作品2</li>
@@ -61,7 +61,7 @@
 </div>
 <div class="banner"><div class="mask"></div></div>
 <main>
-    <div class="userCard">
+    <div id="siteAbout"class="userCard">
         <div class="pictureAndText clearfix">
             <div class="picture"><img src="./images/icon.jpg" alt="logo"></div>
             <div class="text">
@@ -98,7 +98,7 @@
     <p><a class="download" href="" target="_blank" download>下载PDF简历</a></p>
     <p class="introduction">Hello! I’m Robert Smith. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
 </main>
-<section class="skills">
+<section id="siteSkill" class="skills">
     <h2>技能</h2>
     <ol class="clearfix">
         <li>
@@ -145,7 +145,7 @@
         </li>
     </ol>
 </section>
-<section class="portfolio">
+<section id="siteWorks" class="portfolio">
         <h2>作品集</h2>
         <nav>
             <ul class="clearfix">
@@ -207,8 +207,17 @@
             li.classList.remove('active')
         }
     }
-    
-    
+    let aTags = document.querySelectorAll('nav.menue>ul>li>a')
+    for(let i=0;i<aTags.length;i++) {
+        aTags[i].onclick = function(x) {
+            x.preventDefault()  
+            let a = x.currentTarget
+            let href = a.getAttribute('href')
+            let element = document.querySelector(href)
+            let top = element.offsetTop
+            window.scrollTo( 0,top-90)
+        }
+    }
 </script>
 </body>
 </html>
