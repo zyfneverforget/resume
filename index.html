@@ -39,7 +39,7 @@
             <ul class="clearfix">
                 <li class="menuTrigger"><a href="#siteAbout">关于</a></li>
                 <li class="menuTrigger"><a href="#siteSkill">技能</a></li>
-                <li class="menuTrigger"><a href="#siteWorks">作品</a>
+                <li class="menuTrigger"><a href="#siteWorks">作品</a></li>
                     <ul class="submenu">
                         <li>作品1</li>
                         <li>作品2</li>
@@ -181,7 +181,8 @@
             </div>
         </div>
     </section>
-<script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+    <script>
     //setTimeout(function(){
         siteWelcome.classList.remove('active')
     //},3000)
@@ -207,15 +208,35 @@
             li.classList.remove('active')
         }
     }
+
+
     let aTags = document.querySelectorAll('nav.menue>ul>li>a')
     for(let i=0;i<aTags.length;i++) {
+        
+        function animate(time) {
+        requestAnimationFrame(animate);
+        TWEEN.update(time);
+        }
+        requestAnimationFrame(animate);
         aTags[i].onclick = function(x) {
             x.preventDefault()  
             let a = x.currentTarget
             let href = a.getAttribute('href')
             let element = document.querySelector(href)
-            let top = element.offsetTop
-            window.scrollTo( 0,top-90)
+            let currentTop = window.scrollY
+            let top = element.offsetTop - 90
+            let s = top - currentTop
+            console.log(top)
+            console.log(window.scrollY)
+            console.log(s)
+            var coords = {y: window.scrollY}
+            var tween = new TWEEN.Tween(coords)
+            .to({y:top}, 500)
+            .easing(TWEEN.Easing.Quadratic.Out)
+            .onUpdate(function() {
+            window.scrollTo( 0, coords.y)
+        })
+            .start(); // 立即开始 tween*/
         }
     }
 </script>
