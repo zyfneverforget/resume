@@ -40,7 +40,7 @@ h1,p,h2,hr{ margin: 0; padding: 0;}
     position: relative;
 
 }
-.topNavBar ul li.active>a::after{
+.topNavBar ul li.active>a::after,.topNavBar ul li.heighlight>a::after{
     content: '';
     display: block;
     position: absolute;
@@ -63,7 +63,7 @@ h1,p,h2,hr{ margin: 0; padding: 0;}
     display: none;
 }
 
-.topNavBar li.active  .submenu{
+.topNavBar li.active>.submenu{
     display: block;
     position: absolute;
     top: 100%;
