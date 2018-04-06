@@ -16,7 +16,7 @@
     animation: a 1.5s linear infinite;
   }
   .circle::after{
-    animation-delay: 0.75S;
+    animation-delay: -0.75S;
   }
   @keyframes a {
     0%{
