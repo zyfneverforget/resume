@@ -1,259 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resume</title>
-    <link rel="stylesheet" href="./loading.css">
-    <link rel="stylesheet" href="./main.css">
-    <script src="//at.alicdn.com/t/font_571227_mvj9avwnv16vfgvi.js"></script>
-    <style type="text/css">
-        .icon {
-           width: 1em; height: 1em;
-           vertical-align: -0.15em;
-           fill: currentColor;
-           overflow: hidden;
-        }
-        .site-welcome {
-            display: none;
-            background-color: #888;
-            width: 100%; height: 100%; position: fixed; top: 0;left: 0;
-            z-index: 1;
-            justify-content: center;
-            align-items: center;
-        }
-        .site-welcome.active {
-            display: flex;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Resume</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css">
+	<link rel="stylesheet" href="./main.css">
+	<script src="//at.alicdn.com/t/font_571227_mvj9avwnv16vfgvi.js"></script>
+	<style type="text/css">
+		.icon {
+			width: 1em; height: 1em;
+			vertical-align: -0.15em;
+			fill: currentColor;
+			overflow: hidden;
+		}
+		.site-welcome {
+			display: none;
+			background-color: #888;
+			width: 100%; height: 100%; position: fixed; top: 0;left: 0;
+			z-index: 1;
+			justify-content: center;
+			align-items: center;
+		}
+		.site-welcome.active {
+			display: flex;
+		}
+	</style>
 </head>
 <body>
-<div id="siteWelcome" class="site-welcome active">
-    <div class="circle"></div>
-</div>
-<div id="topNavBar" class="topNavBar">
-    <div class="inner clearfix">
-        <a href="#"><span class="rs">RS</span><span class="card">card</span></a>
-        <nav class="menue">
-            <ul class="clearfix">
-                <li class="menuTrigger"><a href="#siteAbout">关于</a></li>
-                <li class="menuTrigger"><a href="#siteSkill">技能</a></li>
-                <li class="menuTrigger"><a href="#siteWorks">作品</a>
-                    <ul class="submenu">
-                        <li>作品1</li>
-                        <li>作品2</li>
-                        <li>作品3</li>
-                    </ul>
-                </li>
-                <li class="menuTrigger"><a href="#">博客</a></li>
-                <li class="menuTrigger"><a href="#">日历</a></li>
-                <li class="menuTrigger"><a href="#">联系方式</a>
-                    <ul class="submenu">
-                        <li>电话</li>
-                        <li>QQ</li>
-                    </ul>
-                </li>
-                <li class="menuTrigger"><a href="#">其它</a></li>
-            </ul>   
-        </nav>
-    </div>       
-</div>
-<div class="banner"><div class="mask"></div></div>
-<main>
-    <div data-x id="siteAbout"class="userCard">
-        <div class="pictureAndText clearfix">
-            <div class="picture"><img src="./images/icon.jpg" alt="logo"></div>
-            <div class="text">
-                <span class="welcome">HELLO
-                    <span class="triangle"></span>
-                </span>
-                <h1>张宇丰</h1>
-                <p>前端工程师</p>
-                <hr>
-                <dl>
-                    <dt>年龄</dt>
-                    <dd>18</dd>
-                    <dt>所在城市</dt>
-                    <dd>北京</dd>
-                    <dt>手机</dt>
-                    <dd>13812345678</dd>
-                    <dt>邮箱</dt>
-                    <dd>535435@qq.com</dd>
-                </dl>
-            </div>
-        </div>
-        <footer class="media">
-            <a href=""><svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-github"></use>
-            </svg></a>
-            <a href=""><svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-weibo"></use>
-            </svg></a>
-            <a href=""><svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-twitter"></use>
-            </svg></a>
-        </footer>
-    </div>
-    <p><a class="download" href="" target="_blank" download>下载PDF简历</a></p>
-    <p class="introduction">Hello! I’m Robert Smith. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
-</main>
-<section data-x id="siteSkill" class="skills">
-    <h2>技能</h2>
-    <ol class="clearfix">
-        <li>
-            <p>HTML 5 &amp; css 3</p>
-            <div class="progress">
-                <div class="progress-bar">
-                </div>
-            </div>
-        </li>
-        <li>
-            <p>Javascript</p>
-            <div class="progress">
-                <div class="progress-bar">
-                </div>
-            </div>
-        </li>
-        <li>
-            <p>jQuary</p>
-            <div class="progress">
-                <div class="progress-bar">
-                </div>
-            </div>
-        </li>
-        <li>
-            <p>Vue</p>
-            <div class="progress">
-                <div class="progress-bar">
-                </div>
-            </div>
-        </li>
-        <li>
-            <p>React</p>
-            <div class="progress">
-                <div class="progress-bar">
-                </div>
-            </div>
-        </li>
-        <li>
-            <p>HTTP</p>
-            <div class="progress">
-                <div class="progress-bar">
-                </div>
-            </div>
-        </li>
-    </ol>
-</section>
-<section data-x id="siteWorks" class="portfolio">
-        <h2>作品集</h2>
-        <nav>
-            <ul class="clearfix">
-                <li id="portfolio1">所有</li>
-                <li id="portfolio2">框架</li>
-                <li id="portfolio3">原生</li>
-            </ul>
-            <div id="portfolioBar" class="bar state-1">
-                <div class="bar-inner">
-                </div>
-            </div>
-            <script>
-                portfolio1.onclick= function(){
-                    portfolioBar.className='bar state-1'
-                }
-                portfolio2.onclick= function(){
-                    portfolioBar.className='bar state-2'
-                }
-                portfolio3.onclick= function(){
-                    portfolioBar.className='bar state-3'
-                }
-            </script>
-        </nav>
-        <div class="works">
-            <div class="big" style="top: 0; left: 0;">
-                <img src="./images/1.jpg" alt="1">
-            </div>
-            <div class="small" style="top: 0; left: 645px;">
-                <img src="./images/2.jpg" alt="2">
-            </div>
-            <div class="small" style="top: 312px; left: 645px;">
-                <img src="./images/3.jpg" alt="3">
-            </div>
-        </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
-    <script>
-    setTimeout(function(){
-        siteWelcome.classList.remove('active')
-    },3000)
-    window.onscroll = function() {
-        if(window.scrollY) {
-        topNavBar.classList.add('active')
-    } else {
-        topNavBar.classList.remove('active')
-        }
-        let specialTags = document.querySelectorAll('[data-x]')
-        let minIndex = 0
-        for (let i=1;i<specialTags.length;i++) {
-            if (Math.abs(specialTags[i].offsetTop-window.scrollY)<(Math.abs(specialTags[minIndex].offsetTop-window.scrollY))){
-                minIndex = i
-            }
-        }
-        let id = specialTags[minIndex].id
-        let a = document.querySelector('a[href="#'+id+'"]') //获取到a标签 例如<a href=#siteWork>
-        let li = a.parentNode                                //获取a标签的父元素li标签
-        let brother=li.parentNode.children
-        for(let i=0;i<brother.length;i++) {
-            brother[i].classList.remove('heighlight')
-        }
-        li.classList.add('heighlight')
-    }
-    let liTags = document.getElementsByClassName('menuTrigger') //得到的是一个哈希
-    for(let i=0;i<liTags.length;i++) { // 遍历这个哈希
-        liTags[i].onmouseenter = function(x) {
-            let li = x.currentTarget
-            li.classList.add('active')
-            //let ul = li.getElementsByTagName('ul')[0]  //[0]不加会报错
-            //ul.classList.add('active')
-        }
-        liTags[i].onmouseleave = function (y) {
-            let li = y.currentTarget 
-            //let ul = li.getElementsByTagName('ul')[0]
-            //ul.classList.remove('active')
-            li.classList.remove('active')
-        }
-    }
-
-
-    let aTags = document.querySelectorAll('nav.menue>ul>li>a')
-    for(let i=0;i<aTags.length;i++) {
-        
-        function animate(time) {
-        requestAnimationFrame(animate);
-        TWEEN.update(time);
-        }
-        requestAnimationFrame(animate);
-        aTags[i].onclick = function(x) {
-            x.preventDefault()  
-            let a = x.currentTarget
-            let href = a.getAttribute('href')
-            let element = document.querySelector(href)
-            let currentTop = window.scrollY
-            let top = element.offsetTop - 90
-            let s = top - currentTop
-            console.log(top)
-            console.log(window.scrollY)
-            console.log(s)
-            var coords = {y: window.scrollY}
-            var tween = new TWEEN.Tween(coords)
-            .to({y:top}, 500)
-            .easing(TWEEN.Easing.Quadratic.Out)
-            .onUpdate(function() {
-            window.scrollTo( 0, coords.y)
-        })
-            .start(); // 立即开始 tween*/
-        }
-    }
-</script>
+	<div id="topNavBar" class="topNavBar">
+		<div class="inner clearfix">
+			<a href="#"><span class="rs">RS</span><span class="card">card</span></a>
+			<nav class="menue">
+				<ul class="clearfix">
+					<li class="menuTrigger"><a href="#siteAbout">关于</a></li>
+					<li class="menuTrigger"><a href="#siteSkill">技能</a></li>
+					<li class="menuTrigger"><a href="#siteWorks">作品</a>
+						<ul class="submenu">
+							<li>作品1</li>
+							<li>作品2</li>
+							<li>作品3</li>
+						</ul>
+					</li>
+					<li class="menuTrigger"><a href="#">博客</a></li>
+					<li class="menuTrigger"><a href="#">日历</a></li>
+					<li class="menuTrigger"><a href="#">联系方式</a>
+						<ul class="submenu">
+							<li>电话</li>
+							<li>QQ</li>
+						</ul>
+					</li>
+					<li class="menuTrigger"><a href="#">其它</a></li>
+				</ul>   
+			</nav>
+		</div>       
+	</div>
+	<div class="banner"><div class="mask"></div></div>
+	<main>
+		<div data-x id="siteAbout"class="userCard">
+			<div class="pictureAndText clearfix">
+				<div class="picture"><img src="./images/icon.jpg" alt="logo"></div>
+				<div class="text">
+						<span class="welcome">HELLO
+							<span class="triangle"></span>
+						</span>
+						<h1>张宇丰</h1>
+						<p>前端工程师</p>
+						<hr>
+						<dl>
+							<dt>年龄</dt>
+							<dd>18</dd>
+							<dt>所在城市</dt>
+							<dd>北京</dd>
+							<dt>手机</dt>
+							<dd>13812345678</dd>
+							<dt>邮箱</dt>
+							<dd>535435@qq.com</dd>
+						</dl>
+				</div>
+			</div>
+			<footer class="media">
+				<a href=""><svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-github"></use>
+				</svg></a>
+				<a href=""><svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-weibo"></use>
+				</svg></a>
+				<a href=""><svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-twitter"></use>
+				</svg></a>
+			</footer>
+		</div>
+			<p><a class="download" href="" target="_blank" download>下载PDF简历</a></p>
+			<p class="introduction">Hello! I’m Robert Smith. Senior Web Developer specializing in front end development. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
+	</main>
+	<section data-x id="siteSkill" class="skills">
+		<h2>技能</h2>
+		<ol class="clearfix">
+				<li>
+					<p>HTML 5 &amp; css 3</p>
+					<div class="progress">
+						<div class="progress-bar"></div>
+					</div>
+				</li>
+				<li>
+					<p>Javascript</p>
+					<div class="progress">
+						<div class="progress-bar"></div>
+						</div>
+				</li>
+				<li>
+					<p>jQuary</p>
+					<div class="progress">
+						<div class="progress-bar"></div>
+					</div>
+				</li>
+				<li>
+					<p>Vue</p>
+					<div class="progress">
+						<div class="progress-bar"></div>
+					</div>
+				</li>
+				<li>
+					<p>React</p>
+					<div class="progress">
+						<div class="progress-bar"></div>
+					</div>
+				</li>
+				<li>
+					<p>HTTP</p>
+					<div class="progress">
+						<div class="progress-bar"></div>
+						</div>
+				</li>
+		</ol>
+	</section>
+	<section data-x id="siteWorks" class="portfolio">
+		<h2>作品集</h2>
+		<nav>
+			<ul class="clearfix">
+				<li id="portfolio1">所有</li>
+				<li id="portfolio2">框架</li>
+				<li id="portfolio3">原生</li>
+			</ul>
+				<div id="portfolioBar" class="bar state-1">
+					<div class="bar-inner"></div>
+				</div>
+				<script>
+					portfolio1.onclick= function(){
+							portfolioBar.className='bar state-1'
+					}
+					portfolio2.onclick= function(){
+							portfolioBar.className='bar state-2'
+					}
+					portfolio3.onclick= function(){
+							portfolioBar.className='bar state-3'
+					}
+				</script>
+		</nav>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+<script src="./js/init-slider.js"></script>
+<script src="./js/sticky-bar.js"></script>
+<script src="./js/highlight.js"></script>
+<script src="./js/pageslider.js"></script>
+<script src="./js/submenues.js"></script>
 </body>
 </html>
