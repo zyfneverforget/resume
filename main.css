@@ -83,12 +83,9 @@ section .progress .progress-bar{ background: #cf5d5f; width: 60%; height: 100%; 
     width: 15%; margin-left: 110px; }
 .portfolio .bar.state-3 .bar-inner{ background: #cf5d5f; height: 100%; border-radius: 2px; 
     width: 15%; margin-left: 222px; }
-.portfolio .works{ position: relative; height: 597px; }
-.portfolio .works .big,
-.portfolio .works .small{ position: absolute; }
-.swiper-container {
+.portfolio .swiper-container {
     width: 600px;
-    height: 300px;
+    height: 400px;
 }
 #comment{
     max-width: 940px; margin-left: auto; margin-right: auto;

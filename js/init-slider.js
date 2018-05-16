@@ -2,7 +2,10 @@
 	let view = document.querySelector('.swiper-container')
 	let mySwiper = new Swiper (view, {
 		// Optional parameters
-		
+		autoplay: {
+			delay: 2000,
+		},
+    spaceBetween: 600,
 		loop: true,
 	
 		// If we need pagination
@@ -21,4 +24,5 @@
 			el: '.swiper-scrollbar',
 		},
 	})
+	
 }.call()

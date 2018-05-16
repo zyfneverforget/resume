@@ -67,7 +67,6 @@ let controller = {
 		let name = this.myMessage.querySelector('input[name=name]').value
 		this.model.load(content,name)
 		.then((object)=> {
-			console.log(object)
 			let li = document.createElement('li')
 			li.innerText = name+':'+content
 			this.messageList.appendChild(li)
